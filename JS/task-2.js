@@ -1,9 +1,9 @@
-function getShippingMessage(country, price, deliveryFree){
-    let totalPrice = price + deliveryFree;
+function getShippingMessage(country, price, deliveryFree) {
+  const totalPrice = price + deliveryFree;
 
-    return `Shipping to ${country} will cost ${totalPrice} credits`;
+  return `Shipping to ${country} will cost ${totalPrice} credits`;
 }
 
-console.log(getShippingMessage("USA", 1000, 50)); // "Shipping to USA will cost 1050 credits"
-console.log(getShippingMessage("Canada", 800, 30)); // "Shipping to Canada will cost 830 credits"
-console.log(getShippingMessage("UK", 1200, 70)); // "Shipping to UK will cost 1270 credits"
+console.log(getShippingMessage('Australia', 120, 50)); // "Shipping to Australia will cost 170 credits"
+console.log(getShippingMessage('Germany', 80, 20)); // "Shipping to Germany will cost 100 credits"
+console.log(getShippingMessage('Sweden', 100, 20)); // "Shipping to  Sweden will cost 120 credits"
