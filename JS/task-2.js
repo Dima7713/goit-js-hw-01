@@ -1,3 +1,4 @@
+'use strict';
 function getShippingMessage(country, price, deliveryFree) {
   const totalPrice = price + deliveryFree;
 
